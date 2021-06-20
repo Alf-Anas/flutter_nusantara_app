@@ -29,12 +29,14 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  flutter_web_plugins:
+    sdk: flutter
 
-
-  # The following adds the Cupertino Icons font to your application.
-  # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
-  mapbox_gl: ^0.12.0
+  mapbox_gl: ^0.11.0
+  mapbox_gl_web: ^0.11.0
+  mapbox_gl_platform_interface: ^0.11.0
+  link_text: ^0.2.0
 
 dev_dependencies:
   flutter_test:
@@ -59,7 +61,12 @@ flutter:
   uses-material-design: true
   assets:
     - images/
+    - images/bendera/
+    - images/detail/
+    - images/lambang/
     - json/
+    - json/geo/
+
   fonts:
     - family: Staatliches
       fonts:
@@ -67,3 +74,6 @@ flutter:
     - family: Oxygen
       fonts:
         - asset: fonts/Oxygen/Oxygen-Regular.ttf
+    - family: Oswald
+      fonts:
+        - asset: fonts/Oswald/Oswald-Regular.ttf
